@@ -38,7 +38,7 @@
 #define RESET_WAIT 50000
 
 //Wait x ms since last received signal to receive next one
-#define _SAFE_WAIT 1000
+#define _SAFE_WAIT 500
 #define SAFE_WAIT ((_RATE * _SAFE_WAIT) / 1000)
 
 #endif /* CONFIG_H_ */
