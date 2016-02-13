@@ -81,7 +81,7 @@ int main()
     PCMSK |= (1 << PCINT0) | (1 << PCINT3);
     sei();
 
-    signal_t signals[2];
+    signal_t signals[2] = {0,0};
     uint16_t buffer[BUFFSIZE];
     uint16_t* addr = 0;
     uint16_t* ptr = buffer;
