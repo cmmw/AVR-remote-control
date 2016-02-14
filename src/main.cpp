@@ -79,6 +79,10 @@ int main()
     //Enable PCINT for switches at pin 0 and 3
     GIMSK |= (1 << PCIE);
     PCMSK |= (1 << PCINT0) | (1 << PCINT3);
+
+    //Disable Analog Comparator
+    ACSR |= (1 << ACD);
+
     sei();
 
     signal_t signals[2] = {0,0};
