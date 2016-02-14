@@ -166,8 +166,8 @@ int main()
         while(!sending_done());
         action = NOTHING;
         TIMSK &= ~(1 << OCIE0A);			//Turn off interrupt
-        _delay_ms(200);
         GREEN_OFF;
+        _delay_ms(200);
     }
 }
 
